@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eNews</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Font Awesome Linking-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="nav_toggle_background">
+            <div class="nav_toggle_logo">
+                <!-- <img src="" alt=""> -->
+                <h1><span>Baazar</span> Potrika</h1>
+            </div>
+            <div class="nav_toggle_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <div class="nav_toggle_dropdown">
+                                <a onclick="dropdown1();" class="nav_toggle_dropdown_btn">Helencha 
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                                <div id="myDropdown1" class="nav_toggle_dropdown_content">
+                                    <a href="#">Link 1</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav_toggle_dropdown">
+                                <a onclick="dropdown2();" class="nav_toggle_dropdown_btn">News 
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                                <div id="myDropdown2" class="nav_toggle_dropdown_content">
+                                    <a href="/assets/SportsMain.html">Sports</a>
+                                    <a href="/assets/PoliticsMain.html">Politics</a>
+                                    <a href="#">Others</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact flex itemscenter">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+91) 8967397123</h5>
+                        <h6>E-mail : support@abc.com</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site_content_wrapper">
+            <div class="nav_toggle_bars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" /></svg>
+            </div>
+            <div class="site_content">
+                <!-- Top Bar Section -->
+                <header class="topbar">
+                    <div class="page_container flex justify-between itemscenter">
+                        <div class="nav_dates flex itemscenter">
+                            <span id="date_today"></span>
+                            <span id="date_today_bangla"></span>
+                            <div class="toggle_date">
+                                <input type="checkbox" class="checkbox" id="chk" />
+                                <label class="label" for="chk">
+                                        <span class="beng">B</span>
+                                        <span class="eng">E</span>
+                                        <div class="ball"></div>
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="digi_clock flex itemscenter">
+                            <span class="clock" id="digital_clock" onload="showTime();"></span>
+                        </div>
+                        <div class="social_media">
+                            <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-twitter" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-instagram" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-linkedin" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-google-plus" style="color: white;"></i></a>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Logo Section -->
+                <nav>
+                    <div class="logo_section">
+                        <div class="page_container flex justify_center">
+                            <div class="branding">
+                                <!-- <img src="" alt=""> -->
+                                <h1 class="flex justify_center">Baazar Potrika</h1>
+                                <div class="divider">
+                                    <div class="shadow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic_shadow">
+                        <div class="page_container flex">
+                            <a href="#" class="active">Home</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">Helencha 
+                                        <i class="fas fa-caret-down"></i>
+                                    </button>
+                                <div class="dropdown_content">
+                                    <a href="#">Link 1</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">News 
+                                    <i class="fas fa-caret-down"></i>
+                                    </button>
+                                <div class="dropdown_content">
+                                    <a href="#">Sports</a>
+                                    <a href="#">Politics</a>
+                                    <a href="#">Others</a>
+                                </div>
+                            </div>
+                            <a href="#">Contact us</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <section class="page_container">
+                    <div class="my_row">
+                        <div class="col_med_9">
+                            <div class="single_posts">
+                                <img class="images" src="/assets/images/coffee.jpg" alt=" ">
+                                <div class="single_posts_wrapper">
+                                    <div class="my_row flex justify-between">
+                                        <h2 class="single_posts_title">
+                                            A Discount Toner Cartridge Is Better Than Ever
+                                        </h2>
+                                        <div class="single_posts_dates">
+                                            <p>31 May 2021, 11:21 am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single_posts_content">
+                                    <p>
+                                        Natun kore 15 din er lockdown goshona korlo sorkar. School college office adalot sob kicu bondho rakhte hbe. Joruri porisheba,mudi dokan,osudh er dokan,mistir dokan chara somosto kicho bondho thakbe.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Joruri porisheba,mudi dokan,osudh er dokan,mistir dokan chara somosto kicho bondho thakbe. Joruri porisheba,mudi dokan,osudh er dokan,mistir dokan chara somosto kicho bondho thakbe.
+                                    </p>
+                                    Natun kore 15 din er lockdown goshona korlo sorkar. School college office adalot sob kicu bondho rakhte hbe. Joruri porisheba,mudi dokan,osudh er dokan,mistir dokan chara somosto kicho bondho thakbe.
+                                    </p>
+                                    <br>
+                                    <p>
+                                        Natun kore 15 din er lockdown goshona korlo sorkar. School college office adalot sob kicu bondho rakhte hbe. Joruri porisheba,mudi dokan,osudh er dokan,mistir dokan chara somosto kicho bondho thakbe. Joruri porisheba,mudi dokan,osudh er dokan,mistir dokan
+                                        chara somosto kicho bondho thakbe.
+                                    </p>
+                                </div>
+
+                                <!-- Start nav Area -->
+                                <section class="prev_next_posts">
+                                    <div class="my_row justify-between flex">
+                                        <div class="prev_post">
+                                            <a href="#"><span><i class="fas fa-backward"></i></span> Prev Post</a>
+                                        </div>
+                                        <div class="next_post">
+                                            <a href="#">Next Post <span><i class="fas fa-forward"></i></span></a>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- End nav Area -->
+                            </div>
+                        </div>
+                        <div class="single_posts_sidebar col_med_3">
+                            <div class="single_widget">
+                                <h2>Categories</h2>
+                                <div class="cat_lists">
+                                    <ul>
+                                        <li>
+                                            <span class="serial">1.</span>
+                                            <span class="cat_name">Sports</span>
+                                            <span class="cat_total_amount">(2)</span>
+                                        </li>
+                                        <li>
+                                            <span class="serial">2.</span>
+                                            <span class="cat_name">Politics</span>
+                                            <span class="cat_total_amount">(1)</span>
+                                        </li>
+                                        <li>
+                                            <span class="serial">3.</span>
+                                            <span class="cat_name">Others</span>
+                                            <span class="cat_total_amount">(4)</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="single_widget single_recent_posts">
+                                <h4 class="text-uppercase pb-20">Recent Posts</h4>
+                                <div class="single_recent_posts_slider">
+                                    <div class="single_recent_posts_slider_items">
+                                        <div class="item active">
+                                            <img class="images" src="images/coffee.jpg" />
+                                            <div class="single_recent_posts_info">
+                                                <h4><a href="single.html">One day your life will flash before your eyes</a></h4>
+                                                <i class="far fa-calendar"> May 30, 2021</i>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="images" src="images/coffee.jpg" />
+                                            <div class="single_recent_posts_info">
+                                                <h4><a href="single.html">Another day in the land of sand</a></h4>
+                                                <i class="far fa-calendar"> May 31, 2021</i>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img class="images" src="images/coffee.jpg" />
+                                            <div class="single_recent_posts_info">
+                                                <h4><a href="single.html">In the era of devils, be a good man.</a></h4>
+                                                <i class="far fa-calendar"> June 1, 2021</i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer Section -->
+                <div class="footer ">
+                    <div class="page_container ">
+                        <div class="footer_wrapper ">
+                            <div class="footer_items footer_about ">
+                                <h1><span>Baazar</span> Patrika</h1>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt, ex eligendi harum possimus sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores ea eum, tempore architecto corporis.</p>
+                                <br>
+                                <div class="footer_contact ">
+                                    <span><i class="fas fa-phone "></i> &nbsp; 123-456-789</span>
+                                    <span><i class="fas fa-envelope "></i> &nbsp; info@baazarpatrika.com</span>
+                                </div>
+                                <br>
+                                <div class="footer_socials ">
+                                    <a href="# "><i class="fab fa-facebook "></i></a>
+                                    <a href="# "><i class="fab fa-instagram "></i></a>
+                                    <a href="# "><i class="fab fa-twitter "></i></a>
+                                    <a href="# "><i class="fab fa-youtube "></i></a>
+                                </div>
+                            </div>
+                            <div class="footer_items footer_quick_links ">
+                                <h2>Quick Links</h2>
+                                <br>
+                                <ul>
+                                    <a href="index.html ">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="sports.html ">
+                                        <li>Sports</li>
+                                    </a>
+                                    <a href="politics.html ">
+                                        <li>Politics</li>
+                                    </a>
+                                    <a href="# ">
+                                        <li>Others</li>
+                                    </a>
+                                    <a href="contact.html ">
+                                        <li>Contact Us</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="footer_items footer_contact_form ">
+                                <h2>Contact us</h2>
+                                <br>
+                                <form action="/assets/index.html " method="post ">
+                                    <input type="email " name="email " class="text_input contact_form_input " placeholder="Your email address... ">
+                                    <textarea rows="4 " name="message " class="text_input contact_form_input " placeholder="Your message... "></textarea>
+                                    <button type="submit " class="contact_btn ">
+                                    <i class="fas fa-envelope "></i>
+                                    Send
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="copyright ">
+                    bazaarpatrika.com &copy; 2021 | All rights reserved by <a href="# ">Bazar Potrika</a>.
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript " src="https://code.jquery.com/jquery-1.11.0.min.js "></script>
+    <script type="text/javascript " src="https://code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
+    <script type="text/javascript " src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js "></script>
+    <script src="js/main.js "></script>
+</body>
+
+</html>

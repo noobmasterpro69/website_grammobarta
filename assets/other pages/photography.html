@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>eNews</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Font Awesome Linking-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+
+</head>
+
+<body>
+    <div class="main_wrapper">
+        <div class="nav_toggle_background">
+            <div class="nav_toggle_logo">
+                <!-- <img src="" alt=""> -->
+                <h1><span>Baazar</span> Potrika</h1>
+            </div>
+            <div class="nav_toggle_menu">
+                <div>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <div class="nav_toggle_dropdown">
+                                <a onclick="dropdown2();" class="nav_toggle_dropdown_btn">News 
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                                <div id="myDropdown2" class="nav_toggle_dropdown_content">
+                                    <a href="sports.html">Sports</a>
+                                    <a href="politics.html">Politics</a>
+                                    <a href="#">Others</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="nav_toggle_dropdown">
+                                <a onclick="dropdown1();" class="nav_toggle_dropdown_btn">Blogs 
+                                    <i class="fas fa-caret-down"></i>
+                                </a>
+                                <div id="myDropdown1" class="nav_toggle_dropdown_content">
+                                    <a href="cooking.html">Cooking</a>
+                                    <a href="travel.html">Travel</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="photography.html">Photography</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact flex itemscenter">
+                    <img src="./icons/phone.svg" alt="">
+                    <div>
+                        <h5>Call us: (+91) 8967397123</h5>
+                        <h6>E-mail : support@bazaarpatrika.com</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="site_content_wrapper">
+            <div class="nav_toggle_bars">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bar-chart">
+                    <line x1="12" y1="20" x2="12" y2="10" />
+                    <line x1="18" y1="20" x2="18" y2="4" />
+                    <line x1="6" y1="20" x2="6" y2="16" /></svg>
+            </div>
+            <div class="site_content">
+                <!-- Top Bar Section -->
+                <header class="topbar">
+                    <div class="page_container flex justify-between itemscenter">
+                        <div class="nav_dates flex itemscenter">
+                            <span id="date_today"></span>
+                            <span id="date_today_bangla"></span>
+                            <div class="toggle_date">
+                                <input type="checkbox" class="checkbox" id="chk" />
+                                <label class="label" for="chk">
+                                        <span class="beng">B</span>
+                                        <span class="eng">E</span>
+                                        <div class="ball"></div>
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="digi_clock flex itemscenter">
+                            <span class="clock" id="digital_clock" onload="showTime();"></span>
+                        </div>
+                        <div class="social_media">
+                            <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-twitter" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-instagram" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-linkedin" style="color: white;"></i></a>
+                            <a href="#"><i class="fab fa-google-plus" style="color: white;"></i></a>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Logo Section -->
+                <nav>
+                    <div class="logo_section">
+                        <div class="page_container flex justify_center">
+                            <div class="branding">
+                                <!-- <img src="" alt=""> -->
+                                <h1 class="flex justify_center">Baazar Potrika</h1>
+                                <div class="divider">
+                                    <div class="shadow"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar magic_shadow">
+                        <div class="page_container flex">
+                            <a href="index.html" class="active">Home</a>
+                            <div class="dropdown">
+                                <button class="dropbtn">News 
+                                    <i class="fas fa-caret-down"></i>
+                                    </button>
+                                <div class="dropdown_content">
+                                    <a href="sports.html">Sports</a>
+                                    <a href="politics.html">Politics</a>
+                                    <a href="#">Others</a>
+                                </div>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropbtn">Blogs 
+                                        <i class="fas fa-caret-down"></i>
+                                    </button>
+                                <div class="dropdown_content">
+                                    <a href="cooking.html">Cooking</a>
+                                    <a href="travel.html">Travel</a>
+                                </div>
+                            </div>
+                            <a href="photography.html">Photography</a>
+                            <a href="contact.html">Contact us</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <!-- Sports Category Heading Section -->
+                <section class="page_container">
+                    <div class="my_row">
+                        <div class="category_news_section col_med_12">
+                            <h1 class="category_news_section_heading">PHOTOGRAPHY</h1>
+                            <ul class="back_links flex">
+                                <li><a href="index.html">Home</a><i class="fas fa-long-arrow-alt-right"></i></li>
+                                <li>Photography</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sports Category Posts Section -->
+                <section class="page_container">
+                    <div class="my_row">
+                        <div class="col_med_12">
+                            <div class="category_post_items flex">
+                                <div class="category_posts col_med_4">
+                                    <img class="images" src="/assets/images/img-carousel2.jpg" alt="">
+                                    <div class="date">31 May 2021</div>
+                                    <a href="#">
+                                        <h4 class="text-uppercase">Natun kore 15 din er lockdown goshona korlo sorkar.</h4>
+                                    </a>
+                                </div>
+                                <div class="category_posts col_med_4">
+                                    <img class="images" src="/assets/images/img-carousel1.jpg" alt="">
+                                    <div class="date">31 May 2021</div>
+                                    <a href="#">
+                                        <h4 class="text-uppercase">School college office adalot sob kicu bondho rakhte hbe.</h4>
+                                    </a>
+                                </div>
+                                <div class="category_posts col_med_4">
+                                    <img class="images" src="/assets/images/img-carousel2.jpg" alt="">
+                                    <div class="date">31 May 2021</div>
+                                    <a href="#">
+                                        <h4 class="text-uppercase">Joruri porisheba,mudi dokan,osudh er dokan,mistir dokan chara somosto kicho bondho thakbe.</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Footer Section -->
+                <div class="footer">
+                    <div class="page_container">
+                        <div class="footer_wrapper">
+                            <div class="footer_items footer_about">
+                                <h1><span>Baazar</span> Patrika</h1>
+                                <br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt, ex eligendi harum possimus sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores ea eum, tempore architecto corporis.</p>
+                                <br>
+                                <div class="footer_contact">
+                                    <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
+                                    <span><i class="fas fa-envelope"></i> &nbsp; info@baazarpatrika.com</span>
+                                </div>
+                                <br>
+                                <div class="footer_socials">
+                                    <a href="#"><i class="fab fa-facebook"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                            <div class="footer_items footer_quick_links">
+                                <h2>Quick Links</h2>
+                                <br>
+                                <ul>
+                                    <a href="index.html">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="sports.html">
+                                        <li>Sports</li>
+                                    </a>
+                                    <a href="politics.html">
+                                        <li>Politics</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Others</li>
+                                    </a>
+                                    <a href="cooking.html">
+                                        <li>Cooking</li>
+                                    </a>
+                                    <a href="travel.html">
+                                        <li>Travel</li>
+                                    </a>
+                                    <a href="contact.html">
+                                        <li>Contact Us</li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <div class="footer_items footer_contact_form">
+                                <h2>Contact us</h2>
+                                <br>
+                                <form action="/assets/index.html" method="post">
+                                    <input type="email" name="email" class="text_input contact_form_input" placeholder="Your email address...">
+                                    <textarea rows="4" name="message" class="text_input contact_form_input" placeholder="Your message..."></textarea>
+                                    <button type="submit" class="contact_btn">
+                                    <i class="fas fa-envelope"></i>
+                                    Send
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="copyright">
+                    bazaarpatrika.com &copy; 2021 | All rights reserved by <a href="#">Bazar Potrika</a>.
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
