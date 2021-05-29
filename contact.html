@@ -7,11 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>eNews</title>
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!--Font Awesome Linking-->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="/css/all.min.css">
+    <link rel="stylesheet" href="/css/fontawesome.min.css">
 
 </head>
 
@@ -19,14 +19,14 @@
     <div class="main_wrapper">
         <div class="nav_toggle_background">
             <div class="nav_toggle_logo">
-                <!-- <img src="" alt=""> -->
+                <img class="images" src="/images/logo.jpg" alt="" style="height: 50px;">
                 <h1><span>Baazar</span> Potrika</h1>
             </div>
             <div class="nav_toggle_menu">
                 <div>
                     <ul>
                         <li>
-                            <a href="index.html">Home</a>
+                            <a href="https://grammobarta.com/">Home</a>
                         </li>
                         <li>
                             <div class="nav_toggle_dropdown">
@@ -34,9 +34,9 @@
                                     <i class="fas fa-caret-down"></i>
                                 </a>
                                 <div id="myDropdown2" class="nav_toggle_dropdown_content">
-                                    <a href="sports.html">Sports</a>
-                                    <a href="politics.html">Politics</a>
-                                    <a href="#">Others</a>
+                                    <a href="https://grammobarta.com/sports">Sports</a>
+                                    <a href="https://grammobarta.com/politics">Politics</a>
+                                    <!-- <a href="#">Others</a> -->
                                 </div>
                             </div>
                         </li>
@@ -46,16 +46,16 @@
                                     <i class="fas fa-caret-down"></i>
                                 </a>
                                 <div id="myDropdown1" class="nav_toggle_dropdown_content">
-                                    <a href="cooking.html">Cooking</a>
-                                    <a href="travel.html">Travel</a>
+                                    <a href="https://grammobarta.com/cooking">Cooking</a>
+                                    <a href="https://grammobarta.com/travel">Travel</a>
                                 </div>
                             </div>
                         </li>
                         <li>
-                            <a href="photography.html">Photography</a>
+                            <a href="https://grammobarta.com/photography">Photography</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact us</a>
+                            <a href="https://grammobarta.com/contact">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -109,7 +109,9 @@
                     <div class="logo_section">
                         <div class="page_container flex justify_center">
                             <div class="branding">
-                                <!-- <img src="" alt=""> -->
+                                <div class="flex justify_center">
+                                    <img class="images" src="/images/logo.jpg" alt="" style="height: 50px;">
+                                </div>
                                 <h1 class="flex justify_center">Baazar Potrika</h1>
                                 <div class="divider">
                                     <div class="shadow"></div>
@@ -119,14 +121,14 @@
                     </div>
                     <div class="navbar magic_shadow">
                         <div class="page_container flex">
-                            <a href="index.html" class="active">Home</a>
+                            <a href="https://grammobarta.com/" class="active">Home</a>
                             <div class="dropdown">
                                 <button class="dropbtn">News 
                                     <i class="fas fa-caret-down"></i>
                                     </button>
                                 <div class="dropdown_content">
-                                    <a href="sports.html">Sports</a>
-                                    <a href="politics.html">Politics</a>
+                                    <a href="https://grammobarta.com/sports">Sports</a>
+                                    <a href="https://grammobarta.com/politics">Politics</a>
                                     <a href="#">Others</a>
                                 </div>
                             </div>
@@ -135,33 +137,43 @@
                                         <i class="fas fa-caret-down"></i>
                                     </button>
                                 <div class="dropdown_content">
-                                    <a href="cooking.html">Cooking</a>
-                                    <a href="travel.html">Travel</a>
+                                    <a href="https://grammobarta.com/cooking">Cooking</a>
+                                    <a href="https://grammobarta.com/travel">Travel</a>
                                 </div>
                             </div>
-                            <a href="photography.html">Photography</a>
-                            <a href="contact.html">Contact us</a>
+                            <a href="https://grammobarta.com/photography">Photography</a>
+                            <a href="https://grammobarta.com/contact">Contact us</a>
                         </div>
                     </div>
                 </nav>
 
                 <!-- Contact Us Section -->
+                <div class="page_container">
+                    <div class="my_row contact_section">
+                        <div class="col_med_6 contact_details">
+                            <div class="contact_details_info">
+                                <div><i class="fas fa-map-marker-alt"></i>Helencha, Bagdah, West Bengal</div>
+                                <div><i class="fas fa-envelope"></i>grammobarta@gmail.com</div>
+                                <div><i class="fas fa-phone"></i>+91 8967397123</div>
+                                <div><i class="fas fa-phone"></i>+91 111122234</div>
+                            </div>
+                        </div>
+                        <div class="col_med_6 contact_form">
+                            <div class="contact_form_details">
+                                <h2>Contact Us</h2>
+                                <form class="contact" action="" method="POST">
+                                    <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+                                    <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+                                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                                    <input type="submit" name="submit" class="contact_form_send_btn" value="Send">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="contact-section">
-                    <div class="contact-info">
-                        <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
-                        <div><i class="fas fa-envelope"></i>contact@email.com</div>
-                        <div><i class="fas fa-phone"></i>+00 0000 000 000</div>
-                        <div><i class="fas fa-clock"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
-                    </div>
-                    <div class="contact-form">
-                        <h2>Contact Us</h2>
-                        <form class="contact" action="">
-                            <input type="text" name="name" class="text-box" placeholder="Your Name" required>
-                            <input type="email" name="email" class="text-box" placeholder="Your Email" required>
-                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-                            <input type="submit" name="submit" class="send-btn" value="Send">
-                        </form>
-                    </div>
+
+
                 </div>
 
 
@@ -170,7 +182,7 @@
                     <div class="page_container">
                         <div class="footer_wrapper">
                             <div class="footer_items footer_about">
-                                <h1><span>Baazar</span> Patrika</h1>
+                                <h1><span>Grammo</span> Barta</h1>
                                 <br>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sunt, ex eligendi harum possimus sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores ea eum, tempore architecto corporis.</p>
                                 <br>
@@ -190,25 +202,25 @@
                                 <h2>Quick Links</h2>
                                 <br>
                                 <ul>
-                                    <a href="index.html">
+                                    <a href="https://grammobarta.com/">
                                         <li>Home</li>
                                     </a>
-                                    <a href="sports.html">
+                                    <a href="https://grammobarta.com/sports">
                                         <li>Sports</li>
                                     </a>
-                                    <a href="politics.html">
+                                    <a href="https://grammobarta.com/politics">
                                         <li>Politics</li>
                                     </a>
                                     <a href="#">
                                         <li>Others</li>
                                     </a>
-                                    <a href="cooking.html">
+                                    <a href="https://grammobarta.com/cooking">
                                         <li>Cooking</li>
                                     </a>
-                                    <a href="travel.html">
+                                    <a href="https://grammobarta.com/travel">
                                         <li>Travel</li>
                                     </a>
-                                    <a href="contact.html">
+                                    <a href="https://grammobarta.com/contact">
                                         <li>Contact Us</li>
                                     </a>
                                 </ul>
@@ -229,7 +241,7 @@
                     </div>
                 </div>
                 <footer class="copyright">
-                    bazaarpatrika.com &copy; 2021 | All rights reserved by <a href="#">Bazar Potrika</a>.
+                    www.grammobarta.com &copy; 2021 | All rights reserved by <a href="https://grammobarta.com/">Grammo Barta</a>.
                 </footer>
             </div>
         </div>
@@ -238,7 +250,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

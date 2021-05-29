@@ -1279,37 +1279,30 @@ footer.copyright a {
 
 /* Contact Us Page */
 
-.contact-section {
-    width: 100%;
+.contact_section {
+    width: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contact-info {
+.contact_details_info {
     color: rgb(15, 15, 15);
-    max-width: 500px;
     line-height: 65px;
-    padding-left: 50px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
-.contact-info i {
+.contact_details_info i {
     margin-right: 20px;
     font-size: 25px;
 }
 
-.contact-form {
-    max-width: 700px;
-    margin-right: 50px;
-}
-
-.contact-info,
-.contact-form {
+.contact_details_info,
+.contact_form_details {
     flex: 1;
 }
 
-.contact-form h2 {
+.contact_form_details h2 {
     color: #fff;
     text-align: center;
     font-size: 35px;
@@ -1317,7 +1310,7 @@ footer.copyright a {
     margin-bottom: 30px;
 }
 
-.contact-form .text-box {
+.contact_form_details .text-box {
     background: #000;
     color: #fff;
     border: none;
@@ -1331,11 +1324,11 @@ footer.copyright a {
     opacity: 0.9;
 }
 
-.contact-form .text-box:first-child {
+.contact_form_details .text-box:first-child {
     margin-right: 15px;
 }
 
-.contact-form textarea {
+.contact_form_details textarea {
     background: #000;
     color: #fff;
     border: none;
@@ -1351,7 +1344,7 @@ footer.copyright a {
     opacity: 0.9;
 }
 
-.contact-form .send-btn {
+.contact_form_details .contact_form_send_btn {
     float: right;
     background: #2E94E3;
     color: #fff;
@@ -1363,12 +1356,13 @@ footer.copyright a {
     text-transform: uppercase;
     letter-spacing: 2px;
     border-radius: 5px;
+    margin-bottom: 30px;
     cursor: pointer;
     transition: 0.3s;
     transition-property: background;
 }
 
-.contact-form .send-btn:hover {
+.contact_form_details .contact_form_send_btn:hover {
     background: #0582E3;
 }
 
@@ -1404,6 +1398,16 @@ footer.copyright a {
     }
     .category_posts {
         width: 35%;
+    }
+    .contact_details,
+    .contact_form {
+        width: 100%;
+    }
+    .contact_details_info {
+        padding: 15px;
+    }
+    .contact_form_details {
+        padding: 10px;
     }
 }
 
